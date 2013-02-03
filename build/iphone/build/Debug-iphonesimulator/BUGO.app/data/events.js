@@ -1,0 +1,1 @@
+/Users/seonte/Mobile Projects/BugoWorkspace/BugoGitRepo/Resources/data/events.js

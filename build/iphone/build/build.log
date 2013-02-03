@@ -1,0 +1,116 @@
+================================================================================
+Appcelerator Titanium Diagnostics Build Log
+The contents of this file are useful to send to Appcelerator Support if
+reporting an issue to help us understand your environment, build settings
+and aid in debugging. Please attach this log to any issue that you report.
+================================================================================
+
+Starting build at 02/02/13 12:34
+
+Build details:
+
+   timestamp=10/02/12 16:16
+   module_apiversion=2
+   version=2.1.3
+   githash=15997d0
+
+
+Script arguments:
+   /Users/seonte/Library/Application Support/Titanium/mobilesdk/osx/2.1.3.GA/iphone/builder.py
+   simulator
+   6.0
+   /Users/seonte/Mobile Projects/BugoWorkspace/BugoGitRepo
+   edu.bradley.bugo
+   BUGO
+   universal
+   iphone
+   
+
+Building from: /Users/seonte/Library/Application Support/Titanium/mobilesdk/osx/2.1.3.GA/iphone
+Platform: Darwin Kernel Version 12.2.0: Sat Aug 25 00:48:52 PDT 2012; root:xnu-2050.18.24~1/RELEASE_X86_64
+
+Xcode path is: /Applications/Xcode.app/Contents/Developer
+
+
+githash=15997d0, existing_git_hash=15997d0
+writing contents of /Users/seonte/Mobile Projects/BugoWorkspace/BugoGitRepo/build/iphone/project.xcconfig:
+
+TI_VERSION=2.1.3.GA
+TI_SDK_DIR=/Users/seonte/Library/Application Support/Titanium/mobilesdk/osx/$(TI_VERSION)/iphone
+TI_APPID=edu.bradley.bugo
+OTHER_LDFLAGS[sdk=iphoneos*]=$(inherited) -weak_framework iAd
+OTHER_LDFLAGS[sdk=iphonesimulator*]=$(inherited) -weak_framework iAd
+#include "module"
+
+old contents
+
+
+Generated the following stylecode code:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>classes</key>
+		<dict>
+</dict>
+
+		<key>classes_density</key>
+		<dict>
+</dict>
+
+		<key>ids</key>
+		<dict>
+</dict>
+
+		<key>ids_density</key>
+		<dict>
+</dict>
+
+		<key>tags</key>
+		<dict>
+</dict>
+
+		<key>tags_density</key>
+		<dict>
+</dict>
+
+	</dict>
+</plist>
+Starting Xcode compile with the following arguments:
+
+    xcodebuild
+    -target
+    BUGO-universal
+    -configuration
+    Debug
+    -sdk
+    iphonesimulator6.0
+    GCC_PREPROCESSOR_DEFINITIONS=__LOG__ID__=cecf7ade-b0aa-4e0f-b581-a29b183ef2c6 DEPLOYTYPE=development TI_DEVELOPMENT=1 DEBUG=1 TI_VERSION=2.1.3.GA  
+    IPHONEOS_DEPLOYMENT_TARGET=4.3
+    TARGETED_DEVICE_FAMILY=1,2
+    VALID_ARCHS=armv7 i386
+
+app_id = edu.bradley.bugo
+
+
+Build settings from command line:
+    GCC_PREPROCESSOR_DEFINITIONS = __LOG__ID__=cecf7ade-b0aa-4e0f-b581-a29b183ef2c6 DEPLOYTYPE=development TI_DEVELOPMENT=1 DEBUG=1 TI_VERSION=2.1.3.GA  
+    IPHONEOS_DEPLOYMENT_TARGET = 4.3
+    SDKROOT = iphonesimulator6.0
+    TARGETED_DEVICE_FAMILY = 1,2
+    VALID_ARCHS = armv7 i386
+
+xcodebuild: error: The directory /Users/seonte/Mobile Projects/BugoWorkspace/BugoGitRepo/build/iphone contains 2 projects, including multiple projects with the current extension (.xcodeproj). Specify the project to use with the -project option.
+
+EXIT CODE WAS: 78
+
+Exception detected in script:
+Traceback (most recent call last):
+  File "/Users/seonte/Library/Application Support/Titanium/mobilesdk/osx/2.1.3.GA/iphone/builder.py", line 1325, in main
+    execute_xcode("iphonesimulator%s" % link_version,["GCC_PREPROCESSOR_DEFINITIONS=__LOG__ID__=%s DEPLOYTYPE=development TI_DEVELOPMENT=1 DEBUG=1 TI_VERSION=%s %s %s" % (log_id,sdk_version,debugstr,kroll_coverage)],False)
+  File "/Users/seonte/Library/Application Support/Titanium/mobilesdk/osx/2.1.3.GA/iphone/builder.py", line 1231, in execute_xcode
+    output = run.run(args,False,False,o)
+  File "/Users/seonte/Library/Application Support/Titanium/mobilesdk/osx/2.1.3.GA/iphone/run.py", line 41, in run
+    sys.exit(rc)
+SystemExit: 78
